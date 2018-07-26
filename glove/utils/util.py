@@ -3,13 +3,9 @@
 import os
 import sys
 
-GLOVE_BUILD = 'build'
-VOCAB_COUNT = os.path.join(GLOVE_BUILD, 'vocab_count')
-COOCCUR = os.path.join(GLOVE_BUILD, 'cooccur')
-SHUFFLE = os.path.join(GLOVE_BUILD, 'shuffle')
-GLOVE = os.path.join(GLOVE_BUILD, 'glove')
-
-COOCCUR
+VOCAB_FILE = 'vocab.txt'
+COOCCURRENCE_FILE = 'cooccurrentce.bin'
+COOCCURRENCE_SHUF_FILE = 'cooccurrentce.shuf.bin'
 
 
 def run_command(cmd):
