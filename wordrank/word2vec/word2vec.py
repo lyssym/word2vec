@@ -4,6 +4,7 @@ from gensim.models.wrappers.wordrank import Wordrank
 
 
 class Word2Vector(object):
+    '''基于Glove共生矩阵及排序训练词向量'''
     def __init__(self, binary_path, model_name, src_file, size=200, window=10, min_count=5, lr=0.025,
                  iter=10, epsilon=0.75, alpha=100, beta=99):
         self.binary_path = binary_path
@@ -38,4 +39,4 @@ if __name__ == '__main__':
     # wv = Word2Vector(binary, model_name, src)
     # print('training')
 
-    model = Wordrank.train(binary, corpus_file='text8', out_name='wr_model', iter=10, memory=8.0)
+    model = Wordrank.train(binary, corpus_file='text8', out_name='wr_model', iter=10, memory=8.0, np=4)

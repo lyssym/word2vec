@@ -7,10 +7,9 @@ from fasttext import cbow
 from fasttext import load_model
 
 
-# fasttext对输入格式有要求，label标签使用  “__label__”+实际标签的形式
-
 class Word2Vector(object):
-    def __iter__(self, src_file, model_file, dim=300, ws=5, min_count=10, hs=0, sg=1,
+    '''fasttext对输入格式有要求，label标签使用  “__label__”+实际标签的形式'''
+    def __init__(self, src_file, model_file, dim=300, ws=5, min_count=10, hs=0, sg=1,
                  learning_rate=0.025, epoch=5, word_ngrams=5, lr_update_rate=100):
         self.src_file = src_file
         self.model_file = model_file
