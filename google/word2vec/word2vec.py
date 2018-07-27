@@ -4,11 +4,8 @@ from word2vec import word2vec
 from word2vec import load
 
 
-##################################################################################
-##########################  google word2vec python 调用接口 #######################
-##########################  支持cbow 或者 skip-gram方式       ######################
-
 class Word2Vector(object):
+    ''' google word2vec python 调用接口 '''
     def __init__(self, file_name, target_name, window=5, hs=1, learning_rate=0.025,
                  size=300, verbose=True):
         self.src_file = file_name

@@ -3,9 +3,7 @@
 import multiprocessing
 
 from glove.utils.util import run_command
-from glove.utils.util import COOCCUR, VOCAB_COUNT, SHUFFLE, GLOVE
 from glove.utils.util import COOCCURRENCE_FILE, COOCCURRENCE_SHUF_FILE, VOCAB_FILE
-from glove.utils.util import GLOVE_BUILD
 
 
 class Word2Vector(object):
